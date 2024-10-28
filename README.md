@@ -4,8 +4,6 @@ Exposed is a Continuous Threat Exposure utility that makes securing your attack 
 
 ## Usage
 
-The client is a command-line interface (*and SDK!*) to create fully autonomous security tooling.
-
 > A valid keychain file is required to get started
 
 Simple to install:
@@ -17,7 +15,7 @@ go install github.com/privateducky/exposed-client@latest
 Simple to use:
 
 ```zsh
-exposed targets                         # list the domains you are monitoring
+exposed targets                         # list your target domains
 exposed start example.com               # start monitoring a new target
 exposed stop example.com                # stop monitoring a target
 exposed notify https://hooks.slack.com  # get push notifications 
