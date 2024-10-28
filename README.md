@@ -2,9 +2,11 @@
 
 Exposed is a Continuous Threat Exposure tool that makes managing your attack surface simple.
 
+## Usage
+
 The Exposed client is a simple command-line interface (and SDK!) to create fully autonomous security tooling.
 
-> Valid keychain file is required to get started
+> A valid keychain file is required to get started
 
 Simple to install:
 
