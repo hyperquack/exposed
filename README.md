@@ -1,6 +1,6 @@
 # Exposed ("Client")
 
-Exposed is a Continuous Threat Exposure utility that simplifies securing your attack surface.
+Exposed is a Continuous Threat Exposure utility that makes securing your attack surface easier.
 
 ## Usage
 
