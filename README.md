@@ -1,18 +1,20 @@
-# Exposed ("The Client")
+# Exposed ("Client")
 
-The Exposed client is a command-line interface to the API.
+Exposed is a Continuous Threat Exposure tool that makes managing your attack surface simple.
+
+The Exposed client is a simple command-line interface (and SDK!) to create fully autonomous security tooling.
 
 > Valid keychain file is required to get started
 
-It's simple to install:
+Simple to install:
 
-```bash
+```go
 go install github.com/privateducky/exposed-client@latest
 ```
 
-And simple to use:
+Simple to use:
 
-```bash
+```zsh
 exposed targets                         # list domains you are monitoring
 exposed start example.com               # start monitoring a new target
 exposed stop example.com                # stop monitoring a target
