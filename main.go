@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"cli/sdk"
+	"exposed/sdk"
 	"github.com/spf13/cobra"
 )
 
