@@ -2,7 +2,7 @@
 
 # Exposed ("Client")
 
-Exposed is a Continuous Threat Exposure alert system that helps secure your attack surface.
+Exposed is a Continuous Threat Exposure alert system that alerts when your attack surface changes.
 
 ## Usage
 
@@ -22,5 +22,5 @@ exposed start example.com               # start monitoring a new target
 exposed stop example.com                # stop monitoring a target
 exposed notify https://hooks.slack.com  # get attack surface notifications 
 exposed push port example.com 80        # add data to a feed
-exposed pull port example.com           # pull data off a feed
+exposed pull port example.com           # pull data from a feed
 ```
