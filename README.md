@@ -2,7 +2,7 @@
 
 # Exposed ("Client")
 
-Exposed is a Continuous Threat Exposure alert system that makes securing your attack surface easier.
+Exposed is a Continuous Threat Exposure alert system that helps secure your attack surface.
 
 ## Usage
 
