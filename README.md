@@ -1,10 +1,10 @@
 # Exposed ("Client")
 
-Exposed is a Continuous Threat Exposure utility that simplifies managing your attack surface.
+Exposed is a Continuous Threat Exposure utility that simplifies securing your attack surface.
 
 ## Usage
 
-The client is a simple command-line interface (*and SDK!*) to create fully autonomous security tooling.
+The client is a command-line interface (*and SDK!*) to create fully autonomous security tooling.
 
 > A valid keychain file is required to get started
 
