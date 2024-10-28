@@ -1,6 +1,6 @@
 # Exposed ("Client")
 
-Exposed is a Continuous Threat Exposure tool that makes managing your attack surface simple.
+Exposed is a Continuous Threat Exposure utility that simplifies managing your attack surface.
 
 ## Usage
 
@@ -17,7 +17,7 @@ go install github.com/privateducky/exposed-client@latest
 Simple to use:
 
 ```zsh
-exposed targets                         # list domains you are monitoring
+exposed targets                         # list the domains you are monitoring
 exposed start example.com               # start monitoring a new target
 exposed stop example.com                # stop monitoring a target
 exposed notify https://hooks.slack.com  # get push notifications 
