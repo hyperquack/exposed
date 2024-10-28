@@ -21,8 +21,7 @@ exposed targets                         # list your target domains
 exposed start example.com               # start monitoring a new target
 exposed stop example.com                # stop monitoring a target
 exposed notify https://hooks.slack.com  # get attack surface notifications 
-exposed push port example.com 80        # add data to a feed
-exposed pull port example.com           # pull data from a feed
+exposed read port example.com           # read data from a feed
 ```
 
 Simple to code against:

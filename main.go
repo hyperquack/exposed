@@ -18,7 +18,7 @@ func main() {
 
 	rootCmd.SetHelpCommand(&cobra.Command{Hidden: true})
 	rootCmd.CompletionOptions.DisableDefaultCmd = true
-	rootCmd.AddCommand(addTargetCmd, removeTargetCmd, getTargetsCmd, pushCmd, pullCmd, notifyCmd)
+	rootCmd.AddCommand(addTargetCmd, removeTargetCmd, getTargetsCmd, readCmd, notifyCmd)
 
 	if err := initializeClient(); err != nil {
 		log.Fatalf("%v", err)
@@ -72,25 +72,11 @@ var getTargetsCmd = &cobra.Command{
 	},
 }
 
-var pushCmd = &cobra.Command{
-	Use:     "push [feed] [target] [value]",
-	Short:   "Push data into a feed",
-	Long:    "Push data into any available feed: port, domain, login, cve",
-	Example: "exposed push port example.com 80",
-	Args:    cobra.ExactArgs(3),
-	Run: func(cmd *cobra.Command, args []string) {
-		namespace, host, value := args[0], args[1], args[2]
-		if _, err := client.Push(namespace, host, value); err == nil {
-			fmt.Printf("Saved data")
-		}
-	},
-}
-
-var pullCmd = &cobra.Command{
-	Use:     "pull [feed] [target]",
-	Short:   "Pull feed for a target",
-	Long:    "Pull data from any available feed: port, domain, login, cve",
-	Example: "exposed pull port example.com",
+var readCmd = &cobra.Command{
+	Use:     "read [feed] [target]",
+	Short:   "Read feed for a target",
+	Long:    "Read data from any available feed: port, domain, login, cve",
+	Example: "exposed read port example.com",
 	Args:    cobra.ExactArgs(2),
 	Run: func(cmd *cobra.Command, args []string) {
 		namespace, host := args[0], args[1]
