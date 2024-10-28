@@ -1,4 +1,4 @@
-module cli
+module exposed
 
 go 1.23.1
 
