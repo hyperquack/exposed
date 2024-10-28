@@ -8,13 +8,13 @@ Exposed is a Continuous Threat Exposure system that alerts when your attack surf
 
 > A valid keychain file is required to get started
 
-### Simple to install:
+Simple to install:
 
 ```go
 go install github.com/privateducky/exposed-client@latest
 ```
 
-### Simple to use:
+Simple to use:
 
 ```zsh
 exposed targets                         # list your target domains
@@ -25,7 +25,7 @@ exposed push port example.com 80        # add data to a feed
 exposed pull port example.com           # pull data from a feed
 ```
 
-### Simple to code against:
+Simple to code against:
 
 ```go
 package main
