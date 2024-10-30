@@ -1,4 +1,4 @@
-module github.com/hyperquack/exposed-client
+module github.com/hyperquack/exposed
 
 go 1.23.1
 
