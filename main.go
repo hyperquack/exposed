@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"exposed/sdk"
+	"github.com/hyperquack/exposed-client/sdk"
 	"github.com/spf13/cobra"
 )
 
