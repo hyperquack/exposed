@@ -11,7 +11,7 @@ Exposed is a Continuous Threat Exposure system that alerts when your attack surf
 Simple to install:
 
 ```go
-go install github.com/hyperquack/exposed-client@latest
+go install github.com/hyperquack/exposed@latest
 ```
 
 Simple to use:
@@ -30,7 +30,7 @@ Simple to code against:
 package main
 
 import (
-  "github.com/hyperquack/exposed-client/sdk"
+  "github.com/hyperquack/exposed/sdk"
   "fmt"
 )
 
