@@ -87,7 +87,7 @@ var readCmd = &cobra.Command{
 
 		if resp, err := client.Pull(namespace, host); err == nil {
 			for _, hit := range resp.Hits {
-				fmt.Println(hit.Host, hit.Value)
+				fmt.Printf("%s//%s\n", hit.Host, hit.Value)
 			}
 		}
 	},
