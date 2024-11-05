@@ -77,9 +77,14 @@ var readCmd = &cobra.Command{
 	Short:   "Read feed for a target",
 	Long:    "Read data from any available feed: port, domain, login, cve",
 	Example: "exposed read port example.com",
-	Args:    cobra.ExactArgs(2),
+	Args:    cobra.RangeArgs(1, 2),
 	Run: func(cmd *cobra.Command, args []string) {
-		namespace, host := args[0], args[1]
+		namespace, host := args[0], ""
+
+		if len(args) > 1 {
+			host = args[1]
+		}
+
 		if resp, err := client.Pull(namespace, host); err == nil {
 			for _, hit := range resp.Hits {
 				fmt.Println(hit.Value)
