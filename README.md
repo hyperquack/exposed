@@ -21,7 +21,7 @@ exposed targets                         # list your target domains
 exposed start example.com               # start monitoring a new target
 exposed stop example.com                # stop monitoring a target
 exposed notify https://hooks.slack.com  # get attack surface notifications 
-exposed read port example.com           # read data from a feed
+exposed read port example.com           # read data from a feed. feed options: port, cve, login, subdomain
 ```
 
 Simple to code against:
